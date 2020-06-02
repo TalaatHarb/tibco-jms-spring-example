@@ -46,59 +46,35 @@
 		<dependency>
 			<groupId>javax.jms</groupId>
 			<artifactId>jms</artifactId>
-			<version>1.1</version>
+			<version>2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.tibco</groupId>
 			<artifactId>tibjms</artifactId>
-			<version>5.1.0</version>
+			<version>8.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.tibco</groupId>
 			<artifactId>tibjmsadmin</artifactId>
-			<version>5.1.0</version>
+			<version>8.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.tibco</groupId>
 			<artifactId>tibjmsapps</artifactId>
-			<version>5.1.0</version>
+			<version>8.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.tibco</groupId>
 			<artifactId>tibrvjms</artifactId>
-			<version>5.1.0</version>
+			<version>8.5.1</version>
 		</dependency>
 		<!-- Tibco EMS End -->
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<archive>
-								<manifest>
-									<mainClass>
-										net.talaatharb.gameengine.sandbox.Main
-									</mainClass>
-								</manifest>
-							</archive>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
