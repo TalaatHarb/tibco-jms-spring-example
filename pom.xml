@@ -53,21 +53,6 @@
 			<artifactId>tibjms</artifactId>
 			<version>8.5.1</version>
 		</dependency>
-		<dependency>
-			<groupId>com.tibco</groupId>
-			<artifactId>tibjmsadmin</artifactId>
-			<version>8.5.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tibco</groupId>
-			<artifactId>tibjmsapps</artifactId>
-			<version>8.5.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tibco</groupId>
-			<artifactId>tibrvjms</artifactId>
-			<version>8.5.1</version>
-		</dependency>
 		<!-- Tibco EMS End -->
 	</dependencies>
 	<build>
