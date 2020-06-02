@@ -1,6 +1,7 @@
 package net.talaatharb.jms.tibco.config;
 
 import javax.jms.ConnectionFactory;
+import javax.jms.DeliveryMode;
 import javax.jms.JMSException;
 import javax.jms.Session;
 
@@ -50,7 +51,7 @@ public class TibcoBusConfiguration {
 		jmsTemplate.setConnectionFactory(jmsConnectionFactory);
 		jmsTemplate.setDefaultDestinationName(queue);
 		jmsTemplate.setExplicitQosEnabled(true);
-		jmsTemplate.setDeliveryMode(2);
+		jmsTemplate.setDeliveryMode(DeliveryMode.PERSISTENT);
 		jmsTemplate.setSessionAcknowledgeMode(Session.CLIENT_ACKNOWLEDGE);
 		jmsTemplate.setSessionTransacted(false);
 
